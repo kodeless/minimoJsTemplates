@@ -1,0 +1,26 @@
+<bmt.content title="MinimoJS">
+  <h2>Basic MinimoJS Template</h2>
+  <bmt.row>
+    <bmt.input bindto="objSample.text" type="text" label="Sample Input Text" size="4"></bmt.input>
+    <bmt.input bindto="objSample.intVal" type="int" label="Sample Input Integer" size="4"></bmt.input>
+    <bmt.input bindto="objSample.floatVal" type="money" label="Sample Input Float" size="4"></bmt.input>
+  </bmt.row>
+  <bmt.row>
+    <bmt.input bindto="objSample.date" type="date" label="Sample Input Date" size="6"></bmt.input>
+    <bmt.select bindto="objSample.item" label="Sample Select" size="6" list="itemList" description="item.name"></bmt.select>
+  </bmt.row>
+  <bmt.row>
+    JSON: ${JSON.stringify(objSample)}
+  </bmt.row>
+  <hr/>
+  <bmt.row>
+    <bmt.table list="objList">
+      <column title="Id">item.intVal</column>
+      <column title="Text">item.text</column>
+    </bmt.table>
+  </bmt.row>
+  <bmt.button-box>
+    <bmt.button onclick="addToTable()">Add to Table</bmt.button>
+    <bmt.button onclick="showModal()">Show Modal</bmt.button>
+  </bmt.button-box>
+</bmt.content>

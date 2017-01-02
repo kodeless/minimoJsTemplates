@@ -1,0 +1,13 @@
+<div class="col-sm-${this.size}">
+  <label>${this.label}:</label>
+  <select class="form-control"
+    data-xbind="bindto" id="${this.id}"
+    onchange="this.change ? this.change() : null">
+    $if(this.allowempty){
+      <option></option>
+    }
+    $for(item in this.list){
+      <option data-xvalue="item">${eval(this.description)}</option>
+    }
+  </select>
+</div>

@@ -1,0 +1,11 @@
+<div class="content-wrapper">
+	<section class="content-header">
+	  <h1>
+	    ${this.title}
+	    <small>${comp.description}</small>
+	  </h1>
+	</section>
+	<section class="content">
+		{xbody}
+	</section>
+</div>

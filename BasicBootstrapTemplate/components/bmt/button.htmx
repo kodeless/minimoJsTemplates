@@ -1,0 +1,1 @@
+<button onclick="this.onclick()" class="btn btn-${this.type}">{xbody}</button>

@@ -1,0 +1,4 @@
+function defineAttributes(types){
+  return {
+  }
+}

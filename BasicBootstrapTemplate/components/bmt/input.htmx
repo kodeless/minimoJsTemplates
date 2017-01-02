@@ -1,0 +1,12 @@
+<div class="col-sm-${this.size}">
+  <label>${this.label}:</label>
+  <input type="text" class="form-control"
+    data-xbind="bindto" id="${this.id}"
+    data-xtype="${this.type}"
+    onclick="this.fire('click')"
+    onchange="this.fire('change')"
+    onkeyup="this.fire('keyup')"
+    onmouseover="this.fire('mouseover')"
+    onmouseout="this.fire('mouseout')"
+    onblur="this.fire('blur')">
+</div>
